@@ -1,19 +1,20 @@
 # Face Recognition API
 
-A FastAPI-based service for face comparison and recognition.
+A FastAPI-based service for face comparison and recognition using DeepFace.
 
 ## Features
 
-- Compare faces between two images
+- Compare faces between two images using DeepFace
 - Calculate face similarity with confidence scores
-- Detect multiple faces in images
+- Advanced face detection and verification
 - Secure API endpoints for face verification
 
 ## Requirements
 
 - Python 3.6+
 - FastAPI
-- face_recognition
+- DeepFace
+- TensorFlow
 - numpy
 - PIL
 - uvicorn
@@ -31,10 +32,9 @@ cd face-recognition
 pip install -r requirements.txt
 ```
 
-3. Additional installation steps:
+3. Additional installation steps (if needed):
 ```bash
-pip install wheel setuptools pip --upgrade 
-pip install git+https://github.com/ageitgey/face_recognition_models --verbose
+pip install wheel setuptools pip --upgrade
 ```
 
 ## Usage
